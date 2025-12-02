@@ -56,12 +56,12 @@ fn main() {
 }
 
 /// Parses a number from the start of the given byte slice and returns the number
-/// as a string and the remaining slice.
+/// as a string and the remaining slice 
 fn parse_number(data: &[u8]) -> Option<(&str, &[u8])> {
     let len = data.len();
     let mut end_index = 0;
 
-    // Find the first non-digit character
+    // Find the first non digit character
     while end_index < len && data[end_index].is_ascii_digit() {
         end_index += 1;
     }
