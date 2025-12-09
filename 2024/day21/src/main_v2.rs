@@ -148,6 +148,7 @@ fn solve(input: &str, num_directional_robots: usize) -> usize {
         let numeric_part: usize = code[..code.len() - 1].parse().unwrap();
         let complexity = total_length * numeric_part;
 
+        println!("{}: {} * {} = {}", code, total_length, numeric_part, complexity);
         total_complexity += complexity;
     }
 
